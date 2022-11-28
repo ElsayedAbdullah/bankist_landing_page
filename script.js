@@ -208,7 +208,7 @@ const sectionObserver = new IntersectionObserver(revealSectionFunc, {
 const sections = document.querySelectorAll('.section');
 sections.forEach(section => {
   sectionObserver.observe(section);
-  // section.classList.add('section--hidden');
+  section.classList.add('section--hidden');
 });
 
 /*
@@ -235,7 +235,7 @@ const imgloading = function (entries, observer) {
 const imgObserver = new IntersectionObserver(imgloading, {
   root: null,
   threshold: 0,
-  // rootMargin: '200px',
+  rootMargin: '200px',
 });
 
 imgTargets.forEach(img => imgObserver.observe(img));
